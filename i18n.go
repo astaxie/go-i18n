@@ -4,6 +4,7 @@ import (
 	"errors"
 	"fmt"
 	"strings"
+	"time"
 )
 
 var (
@@ -42,8 +43,20 @@ func NewIL(translationsDirPath, locale string) (*IL, error) {
 	return il, nil
 }
 
+func (il *IL) Translate(key string) string {
+
+}
+
+func (il *IL) Time(t *time.Time, args ...interface{}) string {
+
+}
+
+func (il *IL) Money(key int64) string {
+
+}
+
 func (il *IL) loadDefaultTranslations(locales []string) {
-	
+
 }
 
 // DirPath returns the translations directory path of the international.
